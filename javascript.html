@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        // var name = prompt("이름을 입력하세요 : ");
+        // document.write("<b><big>" + name + "</big></b>");
+        // alert(name);
+        // console.log(name);
+
+        function calc() {
+            var currentYear = 2023;
+            var birthYear = prompt("태어난 연도를 입력하세요.", "YYYY");
+            var age;
+            age = currentYear - birthYear + 1;
+            document.querySelector("#result").innerHTML = "당신의 나이는 " + age + "세입니다.";
+        }
+
+
+    </script> -->
+</head>
+<body>
+    <button class="btn" onclick="calc()">나이 계산하기</button>
+    <div id="result" class="show">(결과)</div>
+    <script>
+        function calc() {
+            var currentYear = 2023;
+            var birthYear = prompt("태어난 연도를 입력하세요.", "YYYY");
+            var age;
+            age = currentYear - birthYear + 1;
+            document.querySelector("#result").innerHTML = "당신의 나이는 " + age + "세입니다.";
+        }
+    </script>
+</body>
+</html>

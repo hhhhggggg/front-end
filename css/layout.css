@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.grid-container {
+    display: grid;
+    /* fr : 부모(body)에 대해 똑같은 비율로 맞춰줌 */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+/* flex는 하위에 적용 inline은 아이템 자체를 옆으로 
+wrap : 화면이 짤리면 밑 또는 위로 요소를 옮김
+*/
+/* .container {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+} */
+
+.item {
+    background: #0bd;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}

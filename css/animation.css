@@ -1,0 +1,75 @@
+/* 위치이동 변형--------------------------------------------------------------- */
+/* .movex:hover { transform: translateX(50px); }
+.movey:hover { transform: translateY(20px); }
+.movexy:hover { transform : translate(10px, 20px); } */
+
+/* 크기 변형------------------------------------------------------------------- */
+/* .movex:hover { transform: scalex(1.15); }
+.movey:hover { transform: scaley(1.15); }
+.movexy:hover { transform : scale(1.15); } */
+
+/* 각도 변형------------------------------------------------------------------- */
+/* .movex:active { transform: rotate(45deg); }
+.movey:active { transform: rotate(-45deg); } */
+
+
+/* 트랜지션 : 스타일 속성이 조금씩 자연스럽게 바뀌는 것---------------------------- */
+/* .movex:active { 
+    transform: rotate(45deg);
+ }
+.movey:active { 
+    transform: rotate(-45deg);
+ }
+.movey:active { 
+    transform: rotate(-45deg); 
+} */
+
+/* .tr {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid black;
+    transition-property: width, height, background-color, border-radius;
+    transition-duration: 1s,2s,1s;
+    transition-timing-function: ease-in-out;
+  }
+  .tr:hover {
+    width:800px;
+    height:800px;
+    background-color: lightcoral;
+    border-radius: 50%;
+  }
+*/
+
+/* 변화효과--------------------------------------------------------- */
+/* @keyframes 속성-------------------------------------------------- */
+.tr {
+    width: 500px;
+    height: 500px;
+    background-color: #0bd;
+}
+.tr:hover {
+    animation-name: change-bg;
+    animation-duration: 3s;
+}
+
+@keyframes change-bg 
+{
+    from {
+        background-color: #0bd;
+        border: 1px solid black;
+
+    }
+
+    50%{
+        background-color: crimson;
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg); 
+    }
+
+    to {
+        background-color: #0bd;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+}
+  
